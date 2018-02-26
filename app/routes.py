@@ -13,7 +13,7 @@ from werkzeug.urls import url_parse
 # View function that executes when route is hit
 # Uses jinja template engine to inject dynamic content into templates
 def index():
-    return render_template('index.html', title='XXXXXXXXXXX')
+    return render_template('index.html', title='XXXXXXXXXXX', hacker='01010100 01101000 01100001 01100100 01100101 01101111 01110101 01110011 00100000 01010010 01100101 01100001 01110000 01100101 01110010 ')
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -50,7 +50,7 @@ def login():
 
         return redirect(url_for('index'))
     
-    return render_template('login.html', title='Sign In', form=form)
+    return render_template('login.html', title='Sign In', form=form, hacker='01010100 01101000 01100001 01100100 01100101 01101111 01110101 01110011 00100000 01010010 01100101 01100001 01110000 01100101 01110010 ')
 
 @app.route('/logout')
 def logout():
@@ -70,4 +70,4 @@ def register():
         db.session.commit()
         flash('Congratulations, I just pawned your computer BAHAHAHA!')
         return redirect(url_for('index'))
-    return render_template('register.html', title='Register', form=form)
+    return render_template('register.html', title='Register', form=form, hacker='01010100 01101000 01100001 01100100 01100101 01101111 01110101 01110011 00100000 01010010 01100101 01100001 01110000 01100101 01110010 ')
