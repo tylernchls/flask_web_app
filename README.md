@@ -1,7 +1,7 @@
 ### Flask, SQLAlchemy, SQLlite, Bootstrap app
 
 ### Start python virtual environment
-    - ```source venv/bin/activate```
+     - ```source venv/bin/activate```
 
 
 ### Set Flask env variable & server restart on code change
