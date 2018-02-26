@@ -1,0 +1,41 @@
+<html>
+    <head>
+         <link href="{{ url_for('static', filename ='styles.css') }}" rel="stylesheet">
+         
+        {% extends 'bootstrap/base.html' %}
+
+        {% block title %}
+            {% if title %}{{ title }} {% else %}Welcome to Hell{% endif %}
+        {% endblock %}
+    </head>
+    <body>
+        {% block navbar %}
+            <div class="nav">
+                <!-- uses url_for function to map urls to view functions.
+                    gives control later if endpoints need to change 
+                -->
+                <a  class="home_link" href="{{ url_for('index') }}">Home</a>
+                <!-- current_user.is_anonymous expression is going to be True only when the user is not logged in -->
+                {% if current_user.is_anonymous %}
+                <a href="{{ url_for('login') }}">Login</a>
+                {% else %}
+                <a href="{{ url_for('logout') }}">Logout</a>
+                {% endif %}
+            </div>
+        {% endblock %}
+
+        {% block content %}
+            <div class="container">
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                    <div class="alert alert-info" role="alert">{{ message }}</div>
+                    {% endfor %}
+                {% endif %}
+                {% endwith %}
+                   
+                {% block app_content %}{% endblock %}
+            </div>
+        {% endblock %}
+    </body>
+</html>

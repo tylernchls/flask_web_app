@@ -1,0 +1,7 @@
+<!-- Base.html now handles general page layout -->        
+{% extends "base.html" %}
+
+<!-- Injects itself into base.html template -->        
+{% block app_content %}
+    <h1 class="home_title">Welcome to Hell, {{ current_user.username }}!</h1>
+{% endblock %}

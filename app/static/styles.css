@@ -1,0 +1,29 @@
+.nav {
+    margin-top: 2rem;
+}
+
+home_title {
+    color: aqua;
+}
+
+.sign_in_title {
+    color: greenyellow;
+}
+
+.register_title  {
+    color: dodgerblue;
+}
+
+.home_link {
+    padding: 0 2rem 0 1rem; 
+}
+
+.container {
+    text-align: center;
+    margin-top: 6rem;
+}
+
+body {
+    background-image: url("./images/bg.jpeg");
+    background-size: 50% 50%;
+}
