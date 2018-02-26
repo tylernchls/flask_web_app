@@ -30,7 +30,7 @@ def login():
 
         # redirects if username doesn't exist or password incorrect. Uses check_password method from user model
         if user is None or not user.check_password(form.password.data):
-            flash('Invalid username or password')
+            flash('Invalid username or password HAHA')
             return redirect(url_for('login'))
 
         # if both username and password are correct, calls login_user() from flask-login.
