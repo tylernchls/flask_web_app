@@ -3,3 +3,4 @@
 venv
 app.db
 config.py
+.vscode

@@ -11,7 +11,7 @@
 
 ### Create DB Migration Repo
     - ```flask db init``` will create a new migrations directory
-    - Application uses SQLlite, can integrate postgres if needed,
+    - Application uses SQLlite, can integrate postgres if needed
 
 ### Initialize migration
     - ```flask db migrate -m "table name"``` flag descriptive text to migration
