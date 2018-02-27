@@ -2,5 +2,5 @@
 *.pyc
 venv
 app.db
-config.py
+config.pyc
 .vscode
