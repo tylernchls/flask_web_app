@@ -1,6 +1,0 @@
-.DS_Store
-*.pyc
-venv
-app.db
-config.pyc
-vscode
