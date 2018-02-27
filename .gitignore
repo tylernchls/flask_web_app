@@ -1,5 +1,5 @@
 .DS_Store
-# C extensions
+C extensions
 venv
 app.db
 config.py
