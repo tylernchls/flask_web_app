@@ -1,5 +1,5 @@
 .DS_Store
-.pyc extensions
+*.pyc
 venv
 app.db
 config.py
