@@ -8,7 +8,7 @@
 
 
 ### Set Flask env variable & server restart on code change:
- ```export FLASK_APP=server.py```
+ - ```export FLASK_APP=server.py```
  ```export FLASK_DEBUG=1```
  - Run server: ```flask run```
 
