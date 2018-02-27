@@ -13,17 +13,17 @@
  - Run server: ```flask run```
 
 ### Create DB Migration Repo:
- ```flask db init``` 
+ - ```flask db init``` 
  - will create a new migrations directory
  - Application uses SQLlite, can integrate postgres if needed
 
 ### Initialize migration:
-```flask db migrate -m "table name"``` 
+ - ```flask db migrate -m "table name"``` 
  - flag descriptive text to migration
  - will compare models to actual db and generate script to handle changes to models
 
 ### Apply changes to db:
-```flask db upgrade```
+ - ```flask db upgrade```
  - Creates new DB with models applied, will generate new file app.db
  - Note: If using Postgres, will need to create db first before running command.
 
@@ -34,8 +34,8 @@
 ```flask shell``` 
 
 ### Add test user to db:
- ``` flask shell```
- ```new_user = User(username='whatever', email='test@example.com')```
- ```new_user.set_password('whatever')```
- ```db.session.add(new_user)```
- ```db.session.commit()```
+ - ``` flask shell```
+ - ```new_user = User(username='whatever', email='test@example.com')```
+ - ```new_user.set_password('whatever')```
+ - ```db.session.add(new_user)```
+ - ```db.session.commit()```
