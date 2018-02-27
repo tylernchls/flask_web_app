@@ -1,5 +1,8 @@
 ### Flask, SQLAlchemy, SQLlite, Bootstrap app
 
+### Install Dependancies
+```pip install -r requirements.txt```
+
 ### Start python virtual environment
      - ```source venv/bin/activate```
 
