@@ -1,4 +1,4 @@
-### Flask, SQLAlchemy, SQLlite, Bootstrap app
+### Flask, SQLAlchemy, SQLlite, Bootstrap app deployed with heroku
 
 ### Install Dependancies:
 ```pip install -r requirements.txt```
