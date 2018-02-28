@@ -1,5 +1,6 @@
-### Flask, SQLAlchemy, SQLlite, Bootstrap app deployed with heroku
-
+### Flask, SQLAlchemy, SQLlite, Bootstrap app deployed with Heroku
+ - Built with purpose of pentesting web applications for vulnerabilities
+ 
 ### Install Dependancies:
 ```pip install -r requirements.txt```
 
