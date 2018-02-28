@@ -2,6 +2,14 @@
     margin-top: 2rem;
 }
 
+p {
+    color: white;
+}
+
+label {
+    color: orange;
+}
+
 .home_title {
     color: aqua;
 }
